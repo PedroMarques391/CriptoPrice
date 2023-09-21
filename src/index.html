@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"> 
+    <script src="js/app.js" defer></script>
+    <title>Cripto Price</title>
+</head>
+<body class="bg-slate-900 text-white">
+  <main">
+    <section>
+        <h1 class="text-5xl font-helvetica w-[80%] mx-auto mt-5 text-center">Cripto Price</h1>
+        <div class="w-[90%] mx-auto mt-4">
+            <p class="text-center font-bold text-xl">Descubra o Valor das Suas Criptomoedas em Tempo Real!</p>
+            <p class="text-justify mt-2 font-serif">Quer saber quanto suas criptomoedas valem agora? Obtenha informações atualizadas em um piscar de olhos. Seja um investidor informado e tome decisões inteligentes.</p>
+        </div>
+
+       <div class="w-[80%] mx-auto mt-5 text-black">
+        <select name="Coin" id="coin" class="w-full text-center">
+            <option value="BTC">Selecione</option>
+            <option value="BTC" id="btc">BTC</option>
+            <option value="ETH" id="eth">ETH</option>
+            <option value="ADA" id="ada">ADA</option>
+            <option value="AVAX" id="avax">AVAX</option>
+            <option value="DOGE" id="doge">DOGE</option>
+        </select>
+        <button class="w-full mr-auto text-center mt-9 h-14 p-4 rounded-xl bg-yellow-400 font-bold" id="price">Verificar Preço</button>
+       </div>
+
+      <section>
+        <div class="w-[80%] mx-auto mt-5" id="itensLi">
+            
+        </div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "music",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx tailwindcss -i styles.css -o src/css/styles.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.6",
+    "axios": "^1.5.0",
+    "tailwindcss": "^3.3.3"
+  }
+}
