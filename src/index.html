@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css"> 
-    <script src="js/app.js" defer></script>
-    <title>Cripto Price</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+  <title>Cripto Price</title>
 </head>
+
 <body class="bg-slate-900 text-white">
-  <main">
-    <section>
-        <h1 class="text-5xl font-helvetica w-[80%] mx-auto mt-5 text-center">Cripto Price</h1>
+  <main>
+    <section class="md:grid grid-cols-2">
+      <section>
+        <h1 class="text-5xl font-helvetica w-[80%] mx-auto mt-5 text-center md:mt-16 md:text-yellow-400">Cripto Price
+        </h1>
         <div class="w-[90%] mx-auto mt-4">
-            <p class="text-center font-bold text-xl">Descubra o Valor das Suas Criptomoedas em Tempo Real!</p>
-            <p class="text-justify mt-2 font-serif">Quer saber quanto suas criptomoedas valem agora? Obtenha informações atualizadas em um piscar de olhos. Seja um investidor informado e tome decisões inteligentes.</p>
+          <p class="text-center font-bold text-xl">Descubra o Valor das Suas Criptomoedas em Tempo Real!</p>
+          <p class="text-justify mt-2 font-serif md:hidden">Quer saber quanto suas criptomoedas valem agora? Obtenha informações
+            atualizadas em um piscar de olhos. Seja um investidor informado e tome decisões inteligentes.</p>
+          <p class="hidden md:block text-justify mt-2 font-serif">Você está pronto para explorar o emocionante mundo das criptomoedas?
+            Quer saber o valor exato da sua carteira de criptomoedas neste exato momento? Não perca tempo!
+            Com um único clique, você pode descobrir o valor em tempo real das suas criptomoedas favoritas. Esteja você
+            investindo em Bitcoin, Ethereum, ou qualquer outra moeda digital, estamos aqui para fornecer as informações
+            mais atualizadas, para que você possa tomar decisões financeiras inteligentes.
+            Acompanhe o mercado, tome decisões informadas e leve sua jornada cripto para o próximo nível. Não deixe essa
+            oportunidade passar!.</p>
         </div>
 
-       <div class="w-[80%] mx-auto mt-5 text-black">
-        <select name="Coin" id="coin" class="w-full text-center">
-            <option value="BTC">Selecione</option>
+        <div class="w-[80%] mx-auto mt-5 text-black">
+          <select name="Coin" id="coin" class="w-full text-center">
+            <option value="Selecione">Selecione</option>
             <option value="BTC" id="btc">BTC</option>
             <option value="ETH" id="eth">ETH</option>
             <option value="ADA" id="ada">ADA</option>
             <option value="AVAX" id="avax">AVAX</option>
             <option value="DOGE" id="doge">DOGE</option>
-        </select>
-        <button class="w-full mr-auto text-center mt-9 h-14 p-4 rounded-xl bg-yellow-400 font-bold" id="price">Verificar Preço</button>
-       </div>
+          </select>
+          <button class="w-full mr-auto text-center mt-9 h-14 p-4 rounded-xl bg-yellow-400 font-bold"
+            id="price">Verificar Preço</button>
+        </div>
+      </section>
 
       <section>
-        <div class="w-[80%] mx-auto mt-5" id="itensLi">
-            
+        <div class="w-[80%] mx-auto mt-5 md:mt-16" id="itensLi">
+          
         </div>
       </section>
     </section>
   </main>
 </body>
+
 </html>
