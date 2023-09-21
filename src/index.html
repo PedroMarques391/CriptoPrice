@@ -9,11 +9,16 @@
   <title>Cripto Price</title>
 </head>
 
-<body class="bg-slate-900 text-white">
+<body class="bg-slate-900 text-white dark:bg-slate-200 dark:text-black">
+  <header>
+    <div class="flex justify-end mr-10 pr-2 h-16">
+      <button id='btnTheme' class="text-3xl hover:text-4xl">🌞</button>
+  </div>
+</header>
   <main>
     <section class="md:grid grid-cols-2">
       <section>
-        <h1 class="text-5xl font-helvetica w-[80%] mx-auto mt-5 text-center md:mt-16 md:text-yellow-400">Cripto Price
+        <h1 class="text-5xl font-helvetica w-[80%] mx-auto mt-5 text-center md:mt-15 md:text-yellow-400 md:dark:text-yellow-600">Cripto Price
         </h1>
         <div class="w-[90%] mx-auto mt-4">
           <p class="text-center font-bold text-xl">Descubra o Valor das Suas Criptomoedas em Tempo Real!</p>
@@ -29,13 +34,13 @@
         </div>
 
         <div class="w-[80%] mx-auto mt-5 text-black">
-          <select name="Coin" id="coin" class="w-full text-center">
-            <option value="Selecione">Selecione</option>
-            <option value="BTC" id="btc">BTC</option>
-            <option value="ETH" id="eth">ETH</option>
-            <option value="ADA" id="ada">ADA</option>
-            <option value="AVAX" id="avax">AVAX</option>
-            <option value="DOGE" id="doge">DOGE</option>
+          <select name="Coin" id="coin" class="w-full text-center dark:bg-slate-950 dark:text-white focus:ring-0 focus:border-black appearance-none">
+            <option class="appearance-none" value="Selecione">Selecione</option>
+            <option class="" value="BTC" id="btc">BTC</option>
+            <option class="" value="ETH" id="eth">ETH</option>
+            <option class="" value="ADA" id="ada">ADA</option>
+            <option class="" value="AVAX" id="avax">AVAX</option>
+            <option class="" value="DOGE" id="doge">DOGE</option>
           </select>
           <button class="w-full mr-auto text-center mt-9 h-14 p-4 rounded-xl bg-yellow-400 font-bold"
             id="price">Verificar Preço</button>
@@ -49,6 +54,7 @@
       </section>
     </section>
   </main>
+  
 </body>
 
 </html>

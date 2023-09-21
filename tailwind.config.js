@@ -1,13 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ['./src/**/*.{html, js}'],
-  theme: {
-    extend: {
-      fontFamily: {
-        'helvetica': 'Helvetica',
-      }
-    },
+export const content = ['./src/**/*.{html, js}'];
+export const darkMode = "class";
+export const theme = {
+  extend: {
+    fontFamily: {
+      'helvetica': 'Helvetica',
+    }
   },
-  plugins: [require('@tailwindcss/forms')],
-}
+};
+export const plugins = [require('@tailwindcss/forms')];
 
